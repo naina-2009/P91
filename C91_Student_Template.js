@@ -89,51 +89,51 @@ function my_keydown(e)
 		}
 }
 
-function up()
+function car1_up()
 {
-	if (car1_y >= 0)
+	if(car1_y >= 0)
 	{
 		car1_y = car1_y - 10;
-		console.log("when up arrow is pressed, x = " + car1_x + "and y = " + car1_y);
-		upload_background();
-		upload_car1();
-		upload_car2();
+		console.log("when up arrow is pressed, x = " + car1_x + "| y = " + car1_y);
+		uploadBackground();
+		uploadcar1();
+		uploadcar2();
 	}
 }
-
-function down()
+//Add the code for down() function:
+function car1_down()
 {
-	if (car1_y <= 500)
+	if(car1_y <= 500)
 	{
 		car1_y = car1_y + 10;
-		console.log("when down arrow is pressed, x = " + car1_x + "and y = " + car1_y);
-		upload_background();
-		upload_car1();
-		upload_car2();
+		console.log("when down arrow is pressed, x = " + car1_x + "| y = " + car1_y);
+		uploadBackground();
+		uploadcar1();
+		uploadcar2();
 	}
 }
-
-function left()
+//Add the code for right() function:
+function car1_right()
 {
-	if (car1_x >= 0)
-	{
-		car1_x = car1_x - 10;
-		console.log("when up arrow is pressed, x = " + car1_x + "and y = " + car1_y);
-		upload_background();
-		upload_car1();
-		upload_car2();
-	}
-}
-
-function down()
-{
-	if (car1_x <= 700)
+	if(car1_x <= 700)
 	{
 		car1_x = car1_x + 10;
-		console.log("when down arrow is pressed, x = " + car1_x + "and y = " + car1_y);
-		upload_background();
-		upload_car1();
-		upload_car2();
+		console.log("when right arrow is pressed, x = " + car1_x + "| y = " + car1_y);
+		uploadBackground();
+		uploadcar1();
+		uploadcar2();
+	}
+}
+
+function car1_left()
+{
+	if(car1_x >= 0)
+	{
+		car1_x = car1_x - 10;
+		console.log("when left arrow is pressed, x = " + car1_x + "| y = " + car1_y);
+		uploadBackground();
+		uploadcar1();
+		uploadcar2();
 	}
 }
 
